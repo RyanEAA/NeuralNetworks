@@ -13,16 +13,19 @@ bias2 = 3
 bias3 = 0.5
 
 outputs = [ #this is going to be outputting an array of outputs based on inputs, weights and biases
+          
           # Neuron 1: is basically doing inputs[n]*weights1[n] + bias for first neuron
           inputs[0]*weights1[0] +
           inputs[1]*weights1[1] +
           inputs[2]*weights1[2] +
           inputs[3]*weights1[3] + bias1,
+          
           # Neuron 2: is basically doing inputs[n]*weight2[n] + bias for second neuron
           inputs[0]*weights2[0] +
           inputs[1]*weights2[1] +
           inputs[2]*weights2[2] +
           inputs[3]*weights2[3] + bias2,
+          
           # Neuron 3: is basically doing inputs[n]*weights3[n] + bias for third neuron
           inputs[0]*weights3[0] +
           inputs[1]*weights3[1] +

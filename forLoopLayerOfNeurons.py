@@ -20,15 +20,17 @@ biases = [2, 3, 0.5]
 layer_outputs = []
 my_layer_output_attempt = []
 
+
+#my attempt of understanding the programming logic behind the math
 for weight_list, bias in zip(weights, biases):
     output_neuron = 0
     
     for weight, input in zip(weight_list, inputs):
-        
         output_neuron += weight*input
         
     output_neuron+= bias
     my_layer_output_attempt.append(output_neuron)
+    
 print("my output neuron attemt: ", my_layer_output_attempt)
 
 
